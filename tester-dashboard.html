@@ -1,0 +1,94 @@
+<html lang="en">
+     <head> 
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+        <title>Tester Dashboard - Momentum Product Hack</title> 
+        <link rel="stylesheet" href="styles.css" /> <!-- Inline styles for dashboard layout; you can move these to your stylesheet if preferred --> 
+        <style> /* Basic two‑column layout */ 
+        body { display: flex; margin: 0; font-family: "Chakra Petch", sans-serif; } /* Sidebar styling */ 
+        .dashboard { width: 250px; background: #f4f4f4; 
+        padding: 20px; height: 100vh; border-right: 1px solid #ddd; } 
+        .dashboard .user-profile { text-align: center; margin-bottom: 30px; } 
+        .dashboard .user-profile img { width: 80px; height: 80px; border-radius: 50%; } 
+        .dashboard .user-profile p { margin-top: 10px; font-weight: bold; } 
+        .dashboard nav ul { list-style: none; padding: 0; } 
+        .dashboard nav ul li { margin-bottom: 15px; } 
+        .dashboard nav ul li a { text-decoration: none; color: #333; font-weight: bold; } 
+        /* Main content area */ 
+        .main-content { flex: 1; padding: 20px; } .section { margin-bottom: 40px; } 
+        .section h2 { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; } 
+        /* Survey card style */ .survey-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px; } 
+        .survey-card h3 { margin-top: 0; } 
+        .survey-card a { text-decoration: none; color: #007bff; } 
+        .survey-card a:hover { text-decoration: underline; } 
+        </style> 
+    </head> 
+    <body> 
+            <!-- Left Dashboard Sidebar --> 
+             <div class="dashboard"> 
+                <div class="user-profile"> <!-- Replace src with your user icon image if available --> 
+                    <img src="images/solar_user-bold.svg" alt="User Icon" /> 
+                    <p>Profile</p> 
+                </div> 
+                <nav> 
+                    <ul> 
+                        <li>
+                          <a href="profile.html">Edit Profile</a>
+                        </li>
+                        <li>
+                          <a href="mysurveys.html">My Surveys</a>
+                        </li> 
+                        <li>
+                          <a href="myrewards.html">My Rewards</a>
+                        </li> 
+                        <li>
+                          <a href="inbox.html">Inbox</a>
+                        </li> 
+                    </ul> 
+                </nav> 
+            </div>
+            <div class="top-content">
+              <img src ="/images/Logo-Long.png" alt="Long Logo">
+            </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Active Surveys Section -->
+       
+      <div class="active-surveys"> 
+        <h2>Active Studies</h2> 
+        <div class="survey-container">
+          <div class="survey-card"> <div class="card-image"> 
+            <!-- Replace with the actual company image URL --> 
+             <img src="images/somethingidk.svg" alt="Company Logo"> 
+            </div> 
+            <div class="card-content"> 
+              <h3>Comparative Study: UniSync's Old vs New UI</h3> 
+              <p>The primary objective of this study is to evaluate usability, visual aesthetics, and overall user satisfaction.</p> 
+              <a href="/study-info.html">Take Survey</a> 
+            </div> 
+          </div>
+          <div class="survey-card"> <div class="card-image"> 
+            <!-- Replace with the actual company image URL --> 
+             <img src="images/logo2.png" alt="Company Logo"> 
+            </div> 
+            <div class="card-content"> 
+              <h3>Chic-Fil-A App Features</h3> 
+              <p>Ask users about new mini-games every time they order. Completing challenges might unlock discounts, secret menu items, or loyalty points. </p> 
+              <a href="#">Take Survey</a> 
+            </div> 
+          </div>
+          <div class="survey-card"> <div class="card-image"> 
+            <!-- Replace with the actual company image URL --> 
+             <img src="company_logo.png" alt="Company Logo"> 
+            </div> 
+            <div class="card-content"> 
+              <h3>Survey Title 3</h3> 
+              <p>Brief description of Survey 2, detailing what respondents are expected to do.</p> 
+              <a href="#">Take Survey</a> 
+            </div> 
+          </div>
+ 
+      </div>
+    </div>
+</body> 
+</html>

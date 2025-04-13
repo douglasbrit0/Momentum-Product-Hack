@@ -5,6 +5,19 @@
     font-family: "Chakra Petch", static;
 }
 
+nav.navbar {
+    position: fixed;
+
+    width: 100%;
+    z-index: 1000; /* ensure it stays on top */
+    /* Additional styling as needed */
+  }
+  
+  main {
+    margin-top: 120px; /* Adjust this value to the height of your navbar */
+    width: 100%;
+  }
+
 .navbar {
     background: #ffffff;
     height: 80px;
@@ -23,7 +36,6 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -205,3 +217,286 @@
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+#login-section, #portal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+input {
+    width: 100%; 
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    position: relative;
+  }
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 23, 115, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  .hero__content {
+    max-width: 800px;
+    color: white;
+  }
+  .hero__content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .hero__content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .hero__button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4D73FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  .hero__button:hover {
+    background-color: #3b5de8;
+  }
+  
+  /* Info Section */
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+  }
+  .info__text {
+    max-width: 500px;
+  }
+  .info__text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.survey-card { 
+    width: 300px; 
+    height: 300px; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    overflow: hidden;
+    box-sizing: border-box; 
+    display: flex; 
+    flex-direction: column; 
+    margin: 15px; 
+    text-align: center; 
+}
+
+.survey-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    grid-gap: 10px; 
+    justify-items: center; 
+}
+
+.card-image { 
+    width: 100%; 
+    height: 25%;
+    overflow: hidden; 
+}
+
+.card-image img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.card-content { 
+    height: 75%; 
+    padding: 10px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.card-content h3 { margin: 10px 0 5px; }
+
+.card-content p { font-size: 0.9rem; margin: 5px 0; }
+
+.card-content a { margin-top: 10px; text-decoration: none; color: #007BFF; }
+
+body { display: flex; margin: 0; font-family: "Chakra Petch", sans-serif; } /* Sidebar styling */ 
+
+.dashboard { 
+    width: 300px; 
+    background: #f4f4f4; 
+    padding: 20px; 
+    height: auto; 
+    border-right: 1px solid #ddd; 
+} 
+
+.dashboard .user-profile { text-align: center; margin-bottom: 30px; } 
+.dashboard .user-profile img { width: 80px; height: 80px; border-radius: 50%; } 
+.dashboard .user-profile p { margin-top: 10px; font-weight: bold; } 
+.dashboard nav ul { list-style: none; padding: 0; } 
+.dashboard nav ul li { margin-bottom: 15px; } 
+.dashboard nav ul li a { text-decoration: none; color: #333; font-weight: bold; } 
+
+.study-container { 
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+} 
+
+.study-header { 
+    text-align: center; 
+    margin-bottom: 30px; 
+} 
+
+.study-header h1 { 
+    margin-bottom: 10px; 
+} 
+
+.study-content section { 
+    margin-bottom: 30px; 
+} 
+
+.study-content h2 { 
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 5px; 
+} 
+.study-content p { 
+    line-height: 1.6; 
+} 
+
+.study-info-container { 
+    width: 100%; /* Takes up 80% of the available width */ 
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background: #f9f9f9; 
+}
+
+.button-wrapper { 
+    text-align: left;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 700px;
+}
+
+/* The default .button styles might look similar to this: */ 
+.button { 
+    background: #0F1237; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+.study-header img { width: 100px; height: auto;}
+
+.dashboard .user-profile img { width: 50px; height: auto; margin-bottom: -10px;}
+
+.main-content { position: relative; margin-top: 100px; }
+
+body .top-content img { position: absolute; top: 10; right: 10; width: 300px;
+height: auto; }
+
+/* Study.HTML */
+  /* Main content styles */
+  .main-content {
+    padding: 40px;
+  }
+  .study-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .study-header img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .survey-section {
+    margin-bottom: 40px;
+  }
+  .survey-section h2 {
+    margin-bottom: 10px;
+  }
+  .option-group {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .option-group div {
+    margin-bottom: 10px;
+  }
+  .option-group img {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+  }
+  .submit-button {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .submit-button button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #0F1237;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  /* Paragraph spacing */
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .option-group img { width: 300px; height: 750px; margin: 0 100px;  }
+
+  form { width: 300px; margin: 0 auto; padding: 10px;  border: 1px solid #ddd; border-radius: 4px; }
+
+  form p { margin-bottom: 10px; /* Spacing between paragraphs */ }

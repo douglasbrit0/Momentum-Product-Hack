@@ -13,7 +13,7 @@
     <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">
-                <img src="/images/Logo-1.png" alt="KTP Logo" class="navbar__logo-image">
+                <img src="/images/Logo-1.png" alt="Logo" class="navbar__logo-image">
             </a>
             <div class="navbar__toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -31,12 +31,15 @@
         </div>
     </nav>
     <!-- Role selection area -->
-    <div id="role-selection" style="display: flex; flex-direction: column; 
+    <main>
+      <div id="role-selection" style="display: flex; flex-direction: column; 
     align-items: center; justify-content: center; height: 20vh;">
         <h2>Select Your Role</h2>
         <button id="startup-btn" class="button">I'm a startup</button>
         <button id="tester-btn" class="button">I'm a tester</button>
     </div>
+    </main>
+    
   
   <!-- JavaScript to handle the button events -->
   <script>
@@ -55,13 +58,13 @@
     document.getElementById('startup-btn').addEventListener('click', function() {
       saveRole('startup');
       // Redirect to a startup-specific page. Create and implement this page as needed.
-      window.location.href = '/startup-details.html';
+      window.location.href = '/startup-login.html';
     });
   
     document.getElementById('tester-btn').addEventListener('click', function() {
       saveRole('tester');
       // Redirect to tester profile creation page.
-      window.location.href = '/create-profile.html';
+      window.location.href = '/login.html';
     });
   </script>
   

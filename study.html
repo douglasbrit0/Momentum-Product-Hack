@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>UniSync Comparative Study - Old vs New UI</title> 
+        <link rel="stylesheet" href="styles.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Zen+Dots&display=swap" rel="stylesheet"> 
+    </head> 
+        <body> 
+            <!-- Left Dashboard Sidebar --> 
+            <div class="dashboard"> 
+                <div class="user-profile"> <!-- Replace src with your user icon image if available --> 
+                    <img src="images/solar_user-bold.svg" alt="User Icon" /> 
+                    <p>Profile</p> 
+                </div> 
+                <nav> 
+                    <ul> 
+                        <li>
+                          <a href="profile.html">Edit Profile</a>
+                        </li>
+                        <li>
+                          <a href="mysurveys.html">My Surveys</a>
+                        </li> 
+                        <li>
+                          <a href="myrewards.html">My Rewards</a>
+                        </li> 
+                        <li>
+                          <a href="inbox.html">Inbox</a>
+                        </li> 
+                    </ul> 
+                </nav> 
+            </div>
+            <!-- Main Content Area -->
+<div class="main-content">
+    <div class="study-header">
+      <h1>A/B Testing Survey</h1>
+      <!-- For LOGO -->
+      <img src="images/Group 63.svg" alt="Company Logo" />
+      <p>👋 Welcome to the UniSync Survey!</p>
+    </div>
+    
+    <p>
+      Thanks for taking a moment to help us out! In this quick survey, you’ll see a few different versions of design concepts for UniSync—an app that helps college students connect, collaborate, and grow their campus network.
+    </p>
+    
+    <p>
+      <strong>Your task is simple:</strong> Check out each set of designs and pick the one you think works best. There are no right or wrong answers—we just want to understand what feels the most useful, clear, or engaging to you. It’ll only take a few minutes, and your feedback plays a big role in shaping the future of UniSync 💬✨
+    </p>
+    
+    <p>Let’s dive in!</p>
+    
+   
+    <p>
+        Our main brand logo is purple and we would like to use more of it within the app. Below are 2 versions for when one of the navigation bars at the bottom is selected. One is black when selected and the other is purple. Pick whichever looks best.
+      </p>
+    <!-- Navigation Bar Style Options -->
+    <div class="option-group">
+      <div>
+        <img src="images/Group 61.svg" alt="Navigation Option A" />
+        <img src="images/Group 62.svg" alt="Navigation Option B" />
+      </div>
+      <form action="your-endpoint.php" method="post"> <p> What option do you prefer?<br> <input type="radio" name="option" value="optionA" id="optionA"> <label for="optionA">Option A</label><br> <input type="radio" name="option" value="optionB" id="optionB"> <label for="optionB">Option B</label> </p> </form>
+    </div>
+    
+    <p>
+        After filling out your Educational Details you need to move on to the next page to start connecting! Please select the option that could allow you to message people easier.
+    </p>
+    <!-- Brand Logo Selection -->
+    <div class="option-group">
+        
+      <div>
+        <img src="images/Group 59.svg" alt="Nav Option A" />
+        <img src="images/Group 60.svg" alt="Nav Option B" />
+      </div>
+      <form action="your-endpoint.php" method="post"> <p> What option do you prefer?<br> <input type="radio" name="option" value="optionA" id="optionA"> <label for="optionA">Option A</label><br> <input type="radio" name="option" value="optionB" id="optionB"> <label for="optionB">Option B</label> </p> </form>
+    </div>
+    
+    <!-- Submit Button -->
+    <div class="submit-button">
+        <button type="button" id="submit-button">Submit</button>
+      </div>
+  </div>
+  <script>
+    // Wait until the DOM is fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add a click event listener to the submit button
+      document.getElementById('submit-button').addEventListener('click', function() {
+        // Target the survey container inside the element with the 'active-surveys' class.
+        var surveyContainer = document.querySelector('.active-surveys .survey-container');
+    
+        // If the survey container exists and has a first child, remove it.
+        if (surveyContainer && surveyContainer.firstElementChild) {
+          surveyContainer.removeChild(surveyContainer.firstElementChild);
+        }
+    
+        // Redirect (or "go back") to tester-dashboard.
+        // Adjust the URL as needed: this could be a relative path or a full URL.
+        window.location.href = "tester-dashboard.html";
+      });
+    });
+    </script>
+</body>
+</html>
+        
