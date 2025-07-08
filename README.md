@@ -47,7 +47,7 @@ RapidUsers connects early-stage startups with real user feedback — fast. Our M
 
 * Simple DOM manipulation for flow and redirection
 
-📌 Future Improvements
+## 📌 Future Improvements
 * Backend integration with authentication and survey response storage
 
 * Real-time dashboard updates with survey stats
@@ -56,6 +56,6 @@ RapidUsers connects early-stage startups with real user feedback — fast. Our M
 
 * Analytics for tester participation
 
-🧠 Contributors
+## 🧠 Contributors
 Built during the Momentum Product Hack with a focus on speed, clarity, and utility.
 
